@@ -1,0 +1,80 @@
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background-color: #f7f1e3;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #e55039;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  
+  .service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33.333% - 20px); /* Three items per row on desktop */
+    max-width: 300px; /* Prevents stretching on larger screens */
+    flex: 1 1 calc(33.333% - 20px); /* Flexible width */
+    margin-bottom: 20px; /* Adds space between rows */
+  }
+  
+  .service img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
+  
+  .service h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 10px 0;
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets and smaller screens (max-width: 768px) */
+  @media (max-width: 768px) {
+    .service {
+      width: calc(50% - 20px); /* Two items per row */
+      flex: 1 1 calc(50% - 20px); /* Flexible for small screens */
+    }
+  
+    .services h2 {
+      font-size: 28px; /* Slightly smaller heading */
+    }
+  }
+  
+  /* For mobile devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .service {
+      width: 100%; /* One item per row */
+      flex: 1 1 100%; /* Full width for mobile screens */
+    }
+  
+    .services h2 {
+      font-size: 24px; /* Smaller heading for mobile */
+    }
+  
+    .service p {
+      font-size: 14px; /* Smaller text for better readability */
+    }
+  }
+  
